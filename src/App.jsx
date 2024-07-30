@@ -34,7 +34,7 @@ function App() {
         <h2 className = "uppercase text-black text-center lg:text-left text-2xl font-semibold  lg:px-4 ">Plant Trees for impact</h2>
         <h1 className= "uppercase text-black text-center lg:text-left text-xl font-semibold px-4 mb-4 ">Together, Planting a forest</h1>
         <p className="text-black leading-5 text-lg px-4"> Reforestation is one of the best ways to restore ecosystems that have been degraded and deforested. Plant trees to support restoration work in the locations where it is needed  most.</p>
-       <div className="flex"> <p className="text-black leading-4 text-lg font-semibold px-4 mb-5 hover:text-green-400 select-none cursor-pointer"> Learn More... </p></div>
+       <div className="flex"> <p className="text-black leading-4 text-lg font-semibold px-4 mb-5 hover:text-green-400 select-none cursor-pointer transition-colors duration-300"> Learn More... </p></div>
         <p className="text-black leading-4 text-lg font-semibold px-4 mb-3"> Planting trees for Impact will contribute to: </p>
         <ol  className="px-4 list-disc list-inside text-base mb-2">
           <li>Growing healthy, resilient forests</li>
@@ -45,7 +45,7 @@ function App() {
         <form onSubmit={handleEvent} className="border-2 border-slate-300 m-2" >
         <div className="flex justify-evenly m-4 gap-3 ">
       <button
-        className={` px-2 lg:px-6 py-2 font-light border rounded hover:scale-110 transition-transform  ${
+        className={` px-2 lg:px-6 py-2 font-light border rounded hover:scale-110 transition-transform duration-300 ${
           activeButton === 'button1' ? 'bg-green-500 text-white' : 'bg-gray-200'
         }`}
         onClick={() => handleButtonClick('button1')}
@@ -53,7 +53,7 @@ function App() {
         One time Donation
       </button>
       <button
-        className={` px-2 lg:px-6 py-2 font-light border rounded hover:scale-110 transition-transform  ${
+        className={` px-2 lg:px-6 py-2 font-light border rounded hover:scale-110 transition-transform duration-300 ${
           activeButton === 'button2' ? 'bg-green-500 text-white' : 'bg-gray-200'
         }`}
         onClick={() => handleButtonClick('button2')}
@@ -73,7 +73,7 @@ function App() {
         <h2 className= "m-2 px-7 ">{amount}/- rupees</h2>
         </form>
 
-        <div className = "m-4 p-2 flex flex-row justify-center items-center rounded-lg bg-[#E34141] hover:bg-green-400 transition-transform cursor-pointer text-white  ">
+        <div className = "m-4 p-2 flex flex-row justify-center items-center rounded-lg bg-[#E34141] hover:bg-green-400 transition-colors duration-300 cursor-pointer text-white  ">
            <button className= "border-none leading-2 text-xl px-1 font-light ">Plant Trees</button>
            <HiOutlineShoppingBag size={25}/>
         </div>
@@ -147,9 +147,9 @@ out-of-season storms, severe temperature drops  and
 heavy rainfall. All of these factors have combined to create 
 a sharp decline, particularly in the past 20 years.
                                                </p>
-          <h3 className = " inline-block self-start px-3 mb-8 lg:mb-12 text-xl font-bold text-black  hover:text-green-400 cursor-pointer">Read More...</h3>
+          <h3 className = " inline-block self-start px-3 mb-8 lg:mb-12 text-xl font-bold text-black  hover:text-green-400 transition-colors duration-300 cursor-pointer">Read More...</h3>
             <div className= "px-3">
-               <button className = "px-4 py-2 rounded-lg bg-red-600 text-white text-center hover:bg-green-400 hover:scale-105 transition-all">Plant for impact</button>
+               <button className = "px-4 py-2 rounded-lg bg-red-600 text-white text-center hover:bg-green-400 hover:scale-105 transition-all duration-300">Plant for impact</button>
             </div>
             </div>
           </div>
@@ -170,9 +170,9 @@ us make a huge difference. Each fruit tree we plant will equate to
 at least $10 USD in food and nutrition each year, with a cumulative 
 value of 5 million dollars garnered over the next 50-60 years.
                                                </p>
-            <h3 className = "inline-block self-start px-3 mb-8 lg:mb-12 text-xl font-bold text-black hover:text-green-400 cursor-pointer">Read More...</h3>
+            <h3 className = "inline-block self-start px-3 mb-8 lg:mb-12 text-xl font-bold text-black hover:text-green-400 transition-colors duration-300 cursor-pointer">Read More...</h3>
             <div className= "px-3">
-               <button className = "px-4 py-2 rounded-lg bg-red-600 text-white text-center hover:bg-green-400 hover:scale-105 transition-all">Plant for impact</button>
+               <button className = "px-4 py-2 rounded-lg bg-red-600 text-white text-center hover:bg-green-400 hover:scale-105 transition-all duration">Plant for impact</button>
             </div>
             </div>
           </div>
@@ -191,9 +191,9 @@ Our amazing reforestation partners work with several state and
 federal forestry assistance programs, as well as private landowners, 
 aiming to improve the health and productivity of forest lands.
                                                </p>
-            <h3 className = " inline-block self-start px-3 mb-8 lg:mb-12 text-xl font-bold text-black hover:text-green-400 cursor-pointer">Read More...</h3>
+            <h3 className = " inline-block self-start px-3 mb-8 lg:mb-12 text-xl font-bold text-black hover:text-green-400 transition-colors duration-300 cursor-pointer">Read More...</h3>
             <div className= "px-3">
-               <button className = "px-4 py-2 rounded-lg bg-red-600 text-white text-center hover:bg-green-400 hover:scale-105 transition-all">Plant for impact</button>
+               <button className = "px-4 py-2 rounded-lg bg-red-600 text-white text-center hover:bg-green-400 hover:scale-105 transition-all duration-300">Plant for impact</button>
             </div>
             </div>
           </div>
@@ -203,7 +203,7 @@ aiming to improve the health and productivity of forest lands.
    <h1 className = " m-4 text-center text-white text-3xl uppercase select-none"> Want to give more?</h1>
    <h1 className = " m-4 text-center text-white text-3xl uppercase select-none">Help spread the word and get more trees planted!</h1>
   <div>
-    <button className = "mt-20 px-4 py-2 rounded-lg bg-red-500 text-white text-center hover:bg-green-400 hover:scale-105 transition-all">Start a Fundriser</button>
+    <button className = "mt-20 px-4 py-2 rounded-lg bg-red-500 text-white text-center hover:bg-green-400 hover:scale-105 transition-all duration-300">Start a Fundriser</button>
   </div>
   </div>
 </div>
