@@ -1,0 +1,19 @@
+._pt_layer{
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.3),#40dd4d);
+    font-size: larger;
+    text-align: center;
+    transition: height 0.5s;
+  }
+._pt_work:hover ._pt_layer{
+  height: 100%;
+}
